@@ -368,7 +368,7 @@ z=a.length
 for(y=0;y<z;++y){x=a[y]
 if(b.$1(x)===!0)return x
 if(a.length!==z)throw H.c(new P.a_(a))}return c.$0()},
-L:function(a,b){if(b>>>0!==b||b>=a.length)return H.f(a,b)
+L:function(a,b){if(b<0||b>=a.length)return H.f(a,b)
 return a[b]},
 gJ:function(a){if(a.length>0)return a[0]
 throw H.c(H.ac())},
@@ -9396,7 +9396,7 @@ y=z==null
 if(y)H.v(new L.J("Not platform exists!"))
 if(!y&&z.ga2().T(C.aE,null)==null)H.v(new L.J("A platform with a different configuration has been created. Please destroy it first."))
 y=z.ga2()
-K.x5(G.iN(G.iO(K.nC(C.ci)),y,null),C.E)},"$0","nu",0,0,0],
+K.x5(G.iN(G.iO(K.nC(C.ci)),y,null),C.E)},"$0","nu",0,0,2],
 zn:{"^":"a:0;",
 $0:function(){G.xs()}}},1],["","",,G,{"^":"",
 xs:function(){if($.kf)return
