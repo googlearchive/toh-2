@@ -8030,41 +8030,40 @@ av:function(){var z,y,x,w,v,u,t,s,r
 z=this.e
 if(this.d.f!=null)J.dt(z).v(0,this.d.f)
 y=document
-z.appendChild(y.createTextNode("    "))
 x=S.aR(y,"h1",z)
 this.r=x
 this.au(x)
 x=y.createTextNode("")
 this.x=x
 this.r.appendChild(x)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n"))
 x=S.aR(y,"h2",z)
 this.y=x
 this.au(x)
 w=y.createTextNode("My Heroes")
 this.y.appendChild(w)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n"))
 x=S.aR(y,"ul",z)
 this.z=x
 J.fj(x,"heroes")
 this.bc(this.z)
-v=y.createTextNode("\n      ")
+v=y.createTextNode("\n  ")
 this.z.appendChild(v)
 x=$.$get$l7()
 u=x.cloneNode(!1)
 this.z.appendChild(u)
-t=new V.i5(9,7,this,u,null,null,null)
+t=new V.i5(8,6,this,u,null,null,null)
 this.Q=t
 this.ch=new R.dY(t,null,null,null,new D.bq(t,V.r4()))
-s=y.createTextNode("\n    ")
+s=y.createTextNode("\n")
 this.z.appendChild(s)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n"))
 r=x.cloneNode(!1)
 z.appendChild(r)
-x=new V.i5(12,null,this,r,null,null,null)
+x=new V.i5(11,null,this,r,null,null,null)
 this.cx=x
 this.cy=new K.dZ(new D.bq(x,V.r5()),x,!1)
-z.appendChild(y.createTextNode("\n  "))
+z.appendChild(y.createTextNode("\n"))
 this.bO(C.d,C.d)
 return},
 aQ:function(){var z,y,x,w,v,u
@@ -8093,7 +8092,7 @@ z=document
 y=z.createElement("li")
 this.r=y
 this.au(y)
-x=z.createTextNode("\n        ")
+x=z.createTextNode("\n    ")
 this.r.appendChild(x)
 y=S.aR(z,"span",this.r)
 this.x=y
@@ -8121,7 +8120,7 @@ this.Q=x}u=Q.f0(J.fd(y.j(0,"$implicit")))
 w=this.ch
 if(w!==u){this.y.textContent=u
 this.ch=u}y=J.du(y.j(0,"$implicit"))
-t=" "+(y==null?"":H.i(y))+"\n      "
+t=" "+(y==null?"":H.i(y))+"\n  "
 y=this.cx
 if(y!==t){this.z.textContent=t
 this.cx=t}},
@@ -8133,7 +8132,7 @@ z=document
 y=z.createElement("div")
 this.r=y
 this.bc(y)
-x=z.createTextNode("\n      ")
+x=z.createTextNode("\n  ")
 this.r.appendChild(x)
 y=S.aR(z,"h2",this.r)
 this.x=y
@@ -8141,7 +8140,7 @@ this.au(y)
 y=z.createTextNode("")
 this.y=y
 this.x.appendChild(y)
-w=z.createTextNode("\n      ")
+w=z.createTextNode("\n  ")
 this.r.appendChild(w)
 y=S.aR(z,"div",this.r)
 this.z=y
@@ -8154,19 +8153,19 @@ this.Q.appendChild(v)
 y=z.createTextNode("")
 this.ch=y
 this.z.appendChild(y)
-u=z.createTextNode("\n      ")
+u=z.createTextNode("\n  ")
 this.r.appendChild(u)
 y=S.aR(z,"div",this.r)
 this.cx=y
 this.bc(y)
-t=z.createTextNode("\n        ")
+t=z.createTextNode("\n    ")
 this.cx.appendChild(t)
 y=S.aR(z,"label",this.cx)
 this.cy=y
 this.au(y)
 s=z.createTextNode("name: ")
 this.cy.appendChild(s)
-r=z.createTextNode("\n        ")
+r=z.createTextNode("\n    ")
 this.cx.appendChild(r)
 y=S.aR(z,"input",this.cx)
 this.db=y
@@ -8182,9 +8181,9 @@ q.b=X.dr(q,y)
 y=new G.o8(q,null,null)
 y.a=q
 this.fr=y
-p=z.createTextNode("\n      ")
+p=z.createTextNode("\n  ")
 this.cx.appendChild(p)
-o=z.createTextNode("\n    ")
+o=z.createTextNode("\n")
 this.r.appendChild(o)
 J.cx(this.db,"input",this.cA(this.gfV()),null)
 J.cx(this.db,"blur",this.i6(this.dx.gj6()),null)
