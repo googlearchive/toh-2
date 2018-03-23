@@ -46,20 +46,21 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import5.NgFor _NgFor_5_9;
   ViewContainer _appEl_6;
   NgIf _NgIf_6_9;
-  var _expr_1;
+  var _expr_0;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('my-app');
     _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AppComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createAndAppend(doc, 'h1', parentRenderNode);
     addShimE(_el_0);
-    _text_1 = new import3.Text('');
+    _text_1 = new import3.Text((ctx.title ?? ''));
     _el_0.append(_text_1);
     _el_2 = createAndAppend(doc, 'h2', parentRenderNode);
     addShimE(_el_2);
@@ -85,19 +86,15 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    bool firstCheck = (this.cdState == 0);
-    final currVal_1 = _ctx.heroes;
-    if (!identical(_expr_1, currVal_1)) {
-      _NgFor_5_9.ngForOf = currVal_1;
-      _expr_1 = currVal_1;
+    final currVal_0 = _ctx.heroes;
+    if (!identical(_expr_0, currVal_0)) {
+      _NgFor_5_9.ngForOf = currVal_0;
+      _expr_0 = currVal_0;
     }
     _NgFor_5_9.ngDoCheck();
     _NgIf_6_9.ngIf = (_ctx.selectedHero != null);
     _appEl_5.detectChangesInNestedViews();
     _appEl_6.detectChangesInNestedViews();
-    if (firstCheck) {
-      (_text_1.text = (_ctx.title ?? ''));
-    }
   }
 
   @override
@@ -107,7 +104,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewAppComponent0(parentView, parentIndex);
 }
 
@@ -119,7 +116,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewAppComponent1(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -168,7 +165,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent1(parentView, parentIndex);
 }
 
@@ -187,7 +184,7 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
   import16.NgModel _NgModel_11_7;
   var _expr_0;
   var _expr_1;
-  _ViewAppComponent2(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -274,7 +271,7 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent2(parentView, parentIndex);
 }
 
@@ -283,7 +280,7 @@ const List<dynamic> styles$AppComponentHost = const [];
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
   import2.AppComponent _AppComponent_0_5;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
@@ -305,7 +302,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponentHost0(parentView, parentIndex);
 }
 
