@@ -92,7 +92,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       _expr_0 = currVal_0;
     }
     _NgFor_5_9.ngDoCheck();
-    _NgIf_6_9.ngIf = (_ctx.selectedHero != null);
+    _NgIf_6_9.ngIf = (_ctx.selected != null);
     _appEl_5.detectChangesInNestedViews();
     _appEl_6.detectChangesInNestedViews();
   }
@@ -142,7 +142,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
     final import13.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = identical(local_hero, _ctx.selectedHero);
+    final currVal_0 = identical(local_hero, _ctx.selected);
     if (!identical(_expr_0, currVal_0)) {
       updateClass(_el_0, 'selected', currVal_0);
       _expr_0 = currVal_0;
@@ -245,17 +245,17 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
     changed = false;
-    _NgModel_11_7.model = _ctx.selectedHero.name;
+    _NgModel_11_7.model = _ctx.selected.name;
     _NgModel_11_7.ngAfterChanges();
     if (firstCheck) {
       _NgModel_11_7.ngOnInit();
     }
-    final currVal_0 = import10.interpolate0(_ctx.selectedHero.name);
+    final currVal_0 = import10.interpolate0(_ctx.selected.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import10.interpolate0(_ctx.selectedHero.id);
+    final currVal_1 = import10.interpolate0(_ctx.selected.id);
     if (!identical(_expr_1, currVal_1)) {
       _text_7.text = currVal_1;
       _expr_1 = currVal_1;
@@ -263,7 +263,7 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
   }
 
   void _handle_ngModelChange_11_0($event) {
-    ctx.selectedHero.name = $event;
+    ctx.selected.name = $event;
   }
 
   void _handle_input_11_1($event) {
