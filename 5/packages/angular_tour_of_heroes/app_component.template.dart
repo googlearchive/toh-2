@@ -64,7 +64,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_0.append(_text_1);
     _el_2 = createAndAppend(doc, 'h2', parentRenderNode);
     addShimE(_el_2);
-    import3.Text _text_3 = new import3.Text('My Heroes');
+    import3.Text _text_3 = new import3.Text('Heroes');
     _el_2.append(_text_3);
     _el_4 = createAndAppend(doc, 'ul', parentRenderNode);
     _el_4.className = 'heroes';
@@ -173,15 +173,15 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Element _el_1;
   import3.Text _text_2;
-  import3.DivElement _el_4;
-  import3.Element _el_5;
-  import3.Text _text_7;
-  import3.DivElement _el_8;
-  import3.Element _el_9;
-  import3.InputElement _el_11;
-  import14.DefaultValueAccessor _DefaultValueAccessor_11_5;
-  List<import15.ControlValueAccessor<dynamic>> _NgValueAccessor_11_6;
-  import16.NgModel _NgModel_11_7;
+  import3.DivElement _el_3;
+  import3.Element _el_4;
+  import3.Text _text_6;
+  import3.DivElement _el_7;
+  import3.Element _el_8;
+  import3.InputElement _el_10;
+  import14.DefaultValueAccessor _DefaultValueAccessor_10_5;
+  List<import15.ControlValueAccessor<dynamic>> _NgValueAccessor_10_6;
+  import16.NgModel _NgModel_10_7;
   var _expr_0;
   var _expr_1;
   _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -196,45 +196,43 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
     addShimE(_el_1);
     _text_2 = new import3.Text('');
     _el_1.append(_text_2);
-    import3.Text _text_3 = new import3.Text(' details!');
-    _el_1.append(_text_3);
-    _el_4 = createDivAndAppend(doc, _el_0);
-    addShimC(_el_4);
-    _el_5 = createAndAppend(doc, 'label', _el_4);
-    addShimE(_el_5);
-    import3.Text _text_6 = new import3.Text('id:');
-    _el_5.append(_text_6);
-    _text_7 = new import3.Text('');
-    _el_4.append(_text_7);
-    _el_8 = createDivAndAppend(doc, _el_0);
-    addShimC(_el_8);
-    _el_9 = createAndAppend(doc, 'label', _el_8);
-    addShimE(_el_9);
-    import3.Text _text_10 = new import3.Text('name:');
-    _el_9.append(_text_10);
-    _el_11 = createAndAppend(doc, 'input', _el_8);
-    createAttr(_el_11, 'placeholder', 'name');
-    addShimC(_el_11);
-    _DefaultValueAccessor_11_5 = new import14.DefaultValueAccessor(_el_11);
-    _NgValueAccessor_11_6 = [_DefaultValueAccessor_11_5];
-    _NgModel_11_7 = new import16.NgModel(null, _NgValueAccessor_11_6);
-    _el_11.addEventListener('input', eventHandler1(_handle_input_11_1));
-    _el_11.addEventListener('blur', eventHandler0(_DefaultValueAccessor_11_5.touchHandler));
-    final subscription_0 = _NgModel_11_7.update.listen(eventHandler1(_handle_ngModelChange_11_0));
+    _el_3 = createDivAndAppend(doc, _el_0);
+    addShimC(_el_3);
+    _el_4 = createAndAppend(doc, 'label', _el_3);
+    addShimE(_el_4);
+    import3.Text _text_5 = new import3.Text('id:');
+    _el_4.append(_text_5);
+    _text_6 = new import3.Text('');
+    _el_3.append(_text_6);
+    _el_7 = createDivAndAppend(doc, _el_0);
+    addShimC(_el_7);
+    _el_8 = createAndAppend(doc, 'label', _el_7);
+    addShimE(_el_8);
+    import3.Text _text_9 = new import3.Text('name:');
+    _el_8.append(_text_9);
+    _el_10 = createAndAppend(doc, 'input', _el_7);
+    createAttr(_el_10, 'placeholder', 'name');
+    addShimC(_el_10);
+    _DefaultValueAccessor_10_5 = new import14.DefaultValueAccessor(_el_10);
+    _NgValueAccessor_10_6 = [_DefaultValueAccessor_10_5];
+    _NgModel_10_7 = new import16.NgModel(null, _NgValueAccessor_10_6);
+    _el_10.addEventListener('input', eventHandler1(_handle_input_10_1));
+    _el_10.addEventListener('blur', eventHandler0(_DefaultValueAccessor_10_5.touchHandler));
+    final subscription_0 = _NgModel_10_7.update.listen(eventHandler1(_handle_ngModelChange_10_0));
     init([_el_0], [subscription_0]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import14.DefaultValueAccessor) && (11 == nodeIndex))) {
-      return _DefaultValueAccessor_11_5;
+    if ((identical(token, import14.DefaultValueAccessor) && (10 == nodeIndex))) {
+      return _DefaultValueAccessor_10_5;
     }
-    if ((identical(token, const import17.MultiToken<import18.ControlValueAccessor>('NgValueAccessor')) && (11 == nodeIndex))) {
-      return _NgValueAccessor_11_6;
+    if ((identical(token, const import17.MultiToken<import18.ControlValueAccessor>('NgValueAccessor')) && (10 == nodeIndex))) {
+      return _NgValueAccessor_10_6;
     }
-    if (((identical(token, import16.NgModel) || identical(token, import19.NgControl)) && (11 == nodeIndex))) {
-      return _NgModel_11_7;
+    if (((identical(token, import16.NgModel) || identical(token, import19.NgControl)) && (10 == nodeIndex))) {
+      return _NgModel_10_7;
     }
     return notFoundResult;
   }
@@ -245,10 +243,10 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
     changed = false;
-    _NgModel_11_7.model = _ctx.selected.name;
-    _NgModel_11_7.ngAfterChanges();
+    _NgModel_10_7.model = _ctx.selected.name;
+    _NgModel_10_7.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_11_7.ngOnInit();
+      _NgModel_10_7.ngOnInit();
     }
     final currVal_0 = import10.interpolate0(_ctx.selected.name);
     if (!identical(_expr_0, currVal_0)) {
@@ -257,17 +255,17 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
     }
     final currVal_1 = import10.interpolate0(_ctx.selected.id);
     if (!identical(_expr_1, currVal_1)) {
-      _text_7.text = currVal_1;
+      _text_6.text = currVal_1;
       _expr_1 = currVal_1;
     }
   }
 
-  void _handle_ngModelChange_11_0($event) {
+  void _handle_ngModelChange_10_0($event) {
     ctx.selected.name = $event;
   }
 
-  void _handle_input_11_1($event) {
-    _DefaultValueAccessor_11_5.onChange($event.target.value);
+  void _handle_input_10_1($event) {
+    _DefaultValueAccessor_10_5.onChange($event.target.value);
   }
 }
 

@@ -10590,7 +10590,7 @@ this.r.appendChild(s)
 s=S.cd(r,"h2",t)
 this.y=s
 this.at(s)
-q=r.createTextNode("My Heroes")
+q=r.createTextNode("Heroes")
 this.y.appendChild(q)
 s=S.cd(r,"ul",t)
 this.z=s
@@ -10668,7 +10668,7 @@ fR:function(a){var t=this.b.i(0,"$implicit")
 this.f.c=t},
 $asa2:function(){return[Q.aC]}}
 V.fj.prototype={
-aH:function(){var t,s,r,q,p,o,n
+aH:function(){var t,s,r,q,p,o
 t=document
 s=t.createElement("div")
 this.r=s
@@ -10679,16 +10679,14 @@ this.at(s)
 s=t.createTextNode("")
 this.y=s
 this.x.appendChild(s)
-r=t.createTextNode(" details!")
-this.x.appendChild(r)
 s=S.ub(t,this.r)
 this.z=s
 this.b0(s)
 s=S.cd(t,"label",this.z)
 this.Q=s
 this.at(s)
-q=t.createTextNode("id:")
-this.Q.appendChild(q)
+r=t.createTextNode("id:")
+this.Q.appendChild(r)
 s=t.createTextNode("")
 this.ch=s
 this.z.appendChild(s)
@@ -10698,8 +10696,8 @@ this.b0(s)
 s=S.cd(t,"label",this.cx)
 this.cy=s
 this.at(s)
-p=t.createTextNode("name:")
-this.cy.appendChild(p)
+q=t.createTextNode("name:")
+this.cy.appendChild(q)
 s=S.cd(t,"input",this.cx)
 this.db=s
 s.setAttribute("placeholder","name")
@@ -10708,20 +10706,20 @@ s=new O.bP(this.db,new O.i1(),new O.i2())
 this.dx=s
 s=[s]
 this.dy=s
-o=X.yK(s)
-o=new U.e6(null,null,null,!1,null,null,o,null,null)
-o.fY(s)
-this.fr=o
-o=this.db;(o&&C.C).cw(o,"input",this.cE(this.gfS()))
-o=this.db;(o&&C.C).cw(o,"blur",this.ii(this.dx.gj8()))
-o=this.fr.f
-o.toString
-n=new P.bw(o,[H.x(o,0)]).bf(this.cE(this.gfU()))
-this.e8([this.r],[n])
+p=X.yK(s)
+p=new U.e6(null,null,null,!1,null,null,p,null,null)
+p.fY(s)
+this.fr=p
+p=this.db;(p&&C.C).cw(p,"input",this.cE(this.gfS()))
+p=this.db;(p&&C.C).cw(p,"blur",this.ii(this.dx.gj8()))
+p=this.fr.f
+p.toString
+o=new P.bw(p,[H.x(p,0)]).bf(this.cE(this.gfU()))
+this.e8([this.r],[o])
 return},
-ec:function(a,b,c){if(a===C.aY&&11===b)return this.dx
-if(a===C.aI&&11===b)return this.dy
-if((a===C.b2||a===C.b0)&&11===b)return this.fr
+ec:function(a,b,c){if(a===C.aY&&10===b)return this.dx
+if(a===C.aI&&10===b)return this.dy
+if((a===C.b2||a===C.b0)&&10===b)return this.fr
 return c},
 aJ:function(){var t,s,r,q
 t=this.f
