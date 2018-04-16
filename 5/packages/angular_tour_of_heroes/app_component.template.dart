@@ -48,7 +48,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   NgIf _NgIf_6_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('my-app');
     _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AppComponent);
     setupComponentType(_renderType);
@@ -69,12 +69,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_4 = createAndAppend(doc, 'ul', parentRenderNode);
     _el_4.className = 'heroes';
     addShimC(_el_4);
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _el_4.append(_anchor_5);
     _appEl_5 = new ViewContainer(5, 4, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_AppComponent1);
     _NgFor_5_9 = new import5.NgFor(_appEl_5, _TemplateRef_5_8);
-    var _anchor_6 = ngAnchor.clone(false);
+    final _anchor_6 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_6);
     _appEl_6 = new ViewContainer(6, null, this, _anchor_6);
     TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_AppComponent2);
@@ -116,7 +116,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -184,7 +184,7 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
   import16.NgModel _NgModel_10_7;
   var _expr_0;
   var _expr_1;
-  _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -216,8 +216,8 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
     _DefaultValueAccessor_10_5 = new import14.DefaultValueAccessor(_el_10);
     _NgValueAccessor_10_6 = [_DefaultValueAccessor_10_5];
     _NgModel_10_7 = new import16.NgModel(null, _NgValueAccessor_10_6);
-    _el_10.addEventListener('input', eventHandler1(_handle_input_10_1));
     _el_10.addEventListener('blur', eventHandler0(_DefaultValueAccessor_10_5.touchHandler));
+    _el_10.addEventListener('input', eventHandler1(_handle_input_10_2));
     final subscription_0 = _NgModel_10_7.update.listen(eventHandler1(_handle_ngModelChange_10_0));
     init([_el_0], [subscription_0]);
     return null;
@@ -264,8 +264,8 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
     ctx.selected.name = $event;
   }
 
-  void _handle_input_10_1($event) {
-    _DefaultValueAccessor_10_5.onChange($event.target.value);
+  void _handle_input_10_2($event) {
+    _DefaultValueAccessor_10_5.handleChange($event.target.value);
   }
 }
 
@@ -278,7 +278,7 @@ const List<dynamic> styles$AppComponentHost = const [];
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
   import2.AppComponent _AppComponent_0_5;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
